@@ -8,7 +8,7 @@ if exists("b:current_syntax")
   finish
 endif
 
-syn keyword qualeKeywords   fn module if return alias import extern let
+syn keyword qualeKeywords   fn module if else return alias import extern let
 syn match   qualeNamespace  "::"
 syn match   qualeAttr       "#!\=\[\w.*\]"
 

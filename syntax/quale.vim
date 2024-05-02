@@ -11,6 +11,7 @@ endif
 syn keyword qualeKeywords   fn module if else return alias import extern let
 syn match   qualeNamespace  "::"
 syn match   qualeAttr       "#!\=\[\w.*\]"
+syn match   qualeNumeral    "\<\d*\>"
 syn keyword qualeTodo       contained TODO FIXME
 
 syn region qualeComment start="//" end="$" contains=qualeTodo
@@ -22,3 +23,4 @@ hi def link qualeComment    Comment
 hi def link qualeNamespace  Keyword
 hi def link qualeAttr       Constant
 hi def link qualeTodo       Todo
+hi def link qualeNumeral    Number

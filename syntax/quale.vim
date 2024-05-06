@@ -9,6 +9,7 @@ if exists("b:current_syntax")
 endif
 
 syn keyword qualeKeywords   fn module if else return alias import extern let
+syn keyword qualeTypes      bit qbit rad f64
 syn match   qualeNamespace  "::"
 syn match   qualeAttr       "#!\=\[\w.*\]"
 syn match   qualeNumeral    "\<\d*\>"
@@ -24,3 +25,4 @@ hi def link qualeNamespace  Keyword
 hi def link qualeAttr       Constant
 hi def link qualeTodo       Todo
 hi def link qualeNumeral    Number
+hi def link qualeTypes      Type

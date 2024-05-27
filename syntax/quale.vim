@@ -15,6 +15,9 @@ syn match   qualeAttr       "#!\=\[\w.*\]"
 syn match   qualeNumeral    "\<\d*\>"
 syn keyword qualeTodo       contained TODO FIXME
 
+" Qubit representation
+syn match   qualeQubit      "0q(.*)"
+
 syn region qualeComment start="//" end="$" contains=qualeTodo
 
 let b:current_syntax = "quale"
@@ -26,3 +29,4 @@ hi def link qualeAttr       Constant
 hi def link qualeTodo       Todo
 hi def link qualeNumeral    Number
 hi def link qualeTypes      Type
+hi def link qualeQubit      Number

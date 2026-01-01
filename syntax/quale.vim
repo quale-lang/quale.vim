@@ -1,7 +1,7 @@
 " Vim syntax file
 " Language:         Quale
 " Maintainer:       Manas
-" Latest Revision:  20 April 2024
+" Latest Revision:  01 January 2026
 
 
 if exists("b:current_syntax")
@@ -9,7 +9,7 @@ if exists("b:current_syntax")
 endif
 
 syn keyword qualeKeywords   fn module if else return alias import extern let
-syn keyword qualeTypes      bit qbit rad f64
+syn keyword qualeTypes      bit bool qbit rad f64
 syn match   qualeNamespace  "::"
 syn match   qualeAttr       "#!\=\[\w.*\]"
 syn match   qualeNumeral    "\<\d*\>"

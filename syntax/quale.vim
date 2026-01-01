@@ -1,7 +1,7 @@
 " Vim syntax file
 " Language:         Quale
 " Maintainer:       Manas
-" Latest Revision:  01 January 2026
+" Latest Revision:  02 January 2026
 
 
 if exists("b:current_syntax")
@@ -13,6 +13,7 @@ syn keyword qualeTypes      bit bool qbit rad f64
 syn match   qualeNamespace  "::"
 syn match   qualeAttr       "#!\=\[\w.*\]"
 syn match   qualeNumeral    "\<\d*\>"
+syn keyword qualeBool       true false
 syn keyword qualeTodo       contained TODO FIXME
 
 " Qubit representation
@@ -29,4 +30,5 @@ hi def link qualeAttr       Constant
 hi def link qualeTodo       Todo
 hi def link qualeNumeral    Number
 hi def link qualeTypes      Type
+hi def link qualeBool       Boolean
 hi def link qualeQubit      Number
